@@ -1,5 +1,9 @@
-## Put comments here that give an overall description of what your
-## functions do
+## These functions provide the ability to 
+## 1.  create a cached matrix object
+## 2.  determine the inverse matrix given a cached matrix object
+##
+## The actual computation of the inverse matrix will only be performed once.
+## After that the cached value is returned.
 
 ## Write a short comment describing this function
 makeCacheMatrix <- function(x = matrix()) {
@@ -15,7 +19,6 @@ makeCacheMatrix <- function(x = matrix()) {
          setSolution = setSolution,
          getSolution = getSolution)
 }
-
 
 ## Write a short comment describing this function
 cacheSolve <- function(x, ...) {
